@@ -18,20 +18,17 @@ Adds Icon tabs for content elements and pages.
 - Manually write icon code
 
 ## Installation
-
  - From TER: **awesomeicons**, or composer: **t3brightside/awesomeicons**
  - Include static template if Font Awesome is not loaded in your system.
  - Change template constant to include CSS from local source. CDN version is used by default.
  - Check extension configuration for disabling icon tabs or enabling only for certain content types.
 
 ## Usage
-
-NOTE! No front end rendering included. This you have to do in your own templates.
-Use tx_awesomeicons_icon field from tt_content and pages tables in your templates.
+- No front end rendering included. This you have to do in your own templates.
+- Use **tx_awesomeicons_icon** field from **tt_content** and **pages** tables in your templates.
 
 
 ## Sources
-
 -  [GitHub][a47ab545]
 -  [Packagist][40819ab1]
 -  [TER][15e0f507]
@@ -40,10 +37,10 @@ Use tx_awesomeicons_icon field from tt_content and pages tables in your template
   [40819ab1]: https://packagist.org/packages/t3brightside/awesomeicons "Packagist"
   [15e0f507]: https://extensions.typo3.org/extension/awesomeicons/ "Typo3 Extension Repository"
 
-Development and maintenance
----------------------------
+## Development and maintenance
 [Brightside OÜ – TYPO3 development and hosting specialised web agency][ab26eed2]
 
   [ab26eed2]: https://t3brightside.com/ "TYPO3 development and hosting specialised web agency"
-  
+
+## Thanks!
 This extension uses quite a bit of code from [Icon Content](https://gitlab.com/lavitto/typo3-icon-content) by [Philipp Müller](https://www.lavitto.ch/). Thank you Mr. Müller!
