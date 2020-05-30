@@ -4,6 +4,7 @@
 [![Brightside](https://img.shields.io/badge/by-t3brightside.com-orange.svg?style=flat)](https://t3brightside.com)
 
 **TYPO3 CMS extension for Font Awesome icons**
+
 Adds Icon tabs for content elements and pages.
 
 ## System requirements
