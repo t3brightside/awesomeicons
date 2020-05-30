@@ -1,0 +1,35 @@
+/*
+ * This file is part of the "awesomeicons" Extension for TYPO3 CMS.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+.ext-awesomeicons .icon-list {
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.ext-awesomeicons .icon-list h5 {
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    background-color: #ededed;
+    border-bottom: 1px solid #ccc;
+}
+
+.ext-awesomeicons .icon-list .row .item {
+    border: 0 !important;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.ext-awesomeicons .icon-list .row .item.active, .ext-awesomeicons .icon-list .row .item:hover {
+    color: black;
+}
+
+.ext-awesomeicons .icon-list .row .empty {
+    color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+}
+
+/*# sourceMappingURL=Backend.css.map */

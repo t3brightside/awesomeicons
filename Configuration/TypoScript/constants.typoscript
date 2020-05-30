@@ -1,0 +1,4 @@
+awesomeicons {
+	# cat=Awesomeicons/basic/b1; type=boolean; label=Load Font Awesome from CDN: Loads Font Awesome 5.13.0 free from CDN instead of local source
+	enableFontAwesomeCdn = 1
+}

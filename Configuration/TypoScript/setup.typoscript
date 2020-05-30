@@ -1,0 +1,11 @@
+page {
+  includeCSS {
+    awesomeicons_fontawesome = EXT:awesomeicons/Resources/Public/Libraries/fontawesome-free-5.13.0/css/all.min.css
+    awesomeicons_fontawesome.if.isFalse = {$awesomeicons.enableFontAwesomeCdn}
+    awesomeicons_fontawesome_cdn = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
+    awesomeicons_fontawesome_cdn.external = 1
+    awesomeicons_fontawesome_cdn.disableCompression = 1
+    awesomeicons_fontawesome_cdn.excludeFromConcatenation = 1
+    awesomeicons_fontawesome_cdn.if.isTrue = {$awesomeicons.enableFontAwesomeCdn}
+  }
+}
