@@ -46,6 +46,6 @@ if ($awesomeiconsConiguration['awesomeiconsEnablePages'] == 1){
         'pages',
         '--div--;Icon,
             --palette--;;awesomeicons
-        ','','after:twitter_card'
+        ','','after:twitter_image'
     );
 }
