@@ -42,7 +42,7 @@ Use tx_awesomeicons_icon field from tt_content and pages tables in your template
 
 Development and maintenance
 ---------------------------
-This extension uses quite a bit of code from [Icon Content](https://gitlab.com/lavitto/typo3-icon-content) by Philipp Müller. Thank you Mr. Müller!
+This extension uses quite a bit of code from [Icon Content](https://gitlab.com/lavitto/typo3-icon-content) by [Philipp Müller](https://www.lavitto.ch/). Thank you Mr. Müller!
 
 [Brightside OÜ – TYPO3 development and hosting specialised web agency][ab26eed2]
 
