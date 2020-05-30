@@ -119,13 +119,22 @@ class Awesomeicons extends AbstractFormElement
         $out .= '</div>';
         $out .= '<div id="ext-awesomeicons-selected" style="background: #fff; padding: 2em; border: 1px solid #ccc; position: absolute; top: 0; right: 15px; width: auto; margin-top: -40px;"><i class="' . $value . ' fa-fw fa-4x"></i></div>';
         foreach ($this->iconList as $iconGroup => $icons) {
+            if ($iconGroup == 'far') {
+                $iconGroup = 'Light';
+            }
+            if ($iconGroup == 'fas') {
+                $iconGroup = 'Solid';
+            }
+            if ($iconGroup == 'fab') {
+                $iconGroup = 'Brand';
+            }
             $out .= '<div class="icon-list">';
-            $out .= '<h5>' . LocalizationUtility::translate('LLL:EXT:awesomeicons/Resources/Private/Language/Tca.xlf:tt_content.awesomeicons_awesomeicons.icon.group.' . $iconGroup) . '</h5>';
+            $out .= '<h5>'.$iconGroup.'</h5>';
             $out .= '<div class="row">';
             foreach ($icons as $icon) {
                 $out .= $this->getIconSelector($icon, $icon === $value ? ' active' : '');
             }
-            $out .= '<div class="empty hidden"><i>' . LocalizationUtility::translate('LLL:EXT:awesomeicons/Resources/Private/Language/Tca.xlf:tt_content.awesomeicons_awesomeicons.icon.search.empty') . '</i></div>';
+            $out .= '<div class="empty hidden"><i>No icons found...</i></div>';
             $out .= '</div></div>';
         }
         $out .= '<input type="hidden" name="' . $name . '" value="' . $value . '" id="' . $id . '" />';
