@@ -7,14 +7,6 @@
  */
 
 declare(strict_types=1);
-
-/**
- * This file is part of the "awesomeicons" Extension for TYPO3 CMS.
- *
- * For the full copyright and license information, please read the
- * LICENSE file that was distributed with this source code.
- */
-
 namespace Brightside\Awesomeicons\Form\Element;
 
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
@@ -50,7 +42,6 @@ class Awesomeicons extends AbstractFormElement
      */
     public function __construct(NodeFactory $nodeFactory, array $data)
     {
-    /*    parent::__construct($nodeFactory, $data); */
         $value = $data['databaseRow']['tx_awesomeicons_icon'];
         $this->setValue($value);
         $this->loadAssets();

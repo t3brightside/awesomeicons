@@ -9,9 +9,6 @@
 /** @noinspection PhpFullyQualifiedNameUsageInspection */
 defined('TYPO3_MODE') or die();
 
-/**
- * Get extensions configuration
- */
 $extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
   \TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
 );
@@ -35,9 +32,14 @@ $GLOBALS['TCA']['tt_content']['columns']['tx_awesomeicons_search'] = [
     ],
 ];
 
-/**
- * CType awesomeicons_awesomeicons
- */
+$GLOBALS['TCA']['tt_content']['palettes']['awesomeicons'] = [
+    'label' => 'LLL:EXT:awesomeicons/Resources/Private/Language/Tca.xlf:tt_content.awesomeicons_awesomeicons.icon',
+    'showitem' => '
+        tx_awesomeicons_icon,
+        --linebreak--,
+        tx_awesomeicons_search;Keyword search'
+];
+
 if ($awesomeiconsConiguration['awesomeiconsEnableContent'] == 1){
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'tt_content',
@@ -46,13 +48,3 @@ if ($awesomeiconsConiguration['awesomeiconsEnableContent'] == 1){
         ',$awesomeiconsConiguration['awesomeiconsContentTypes'], 'after:sectionIndex'
     );
 }
-/**
- * Palettes
- */
-$GLOBALS['TCA']['tt_content']['palettes']['awesomeicons'] = [
-    'label' => 'LLL:EXT:awesomeicons/Resources/Private/Language/Tca.xlf:tt_content.awesomeicons_awesomeicons.icon',
-    'showitem' => '
-        tx_awesomeicons_icon,
-        --linebreak--,
-        tx_awesomeicons_search;Keyword search'
-];

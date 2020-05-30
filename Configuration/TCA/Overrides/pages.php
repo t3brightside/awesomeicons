@@ -9,9 +9,6 @@
 /** @noinspection PhpFullyQualifiedNameUsageInspection */
 defined('TYPO3_MODE') or die();
 
-/**
- * Get extensions configuration
- */
 $extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
   \TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
 );
@@ -36,11 +33,6 @@ $GLOBALS['TCA']['pages']['columns']['tx_awesomeicons_search'] = [
     ],
 ];
 
-// $GLOBALS['TCA']['pages']['columns']['pi_flexform']['config']['ds'][',*'] = 'FILE:EXT:awesomeicons/Configuration/FlexForm/Awesomeicons.xml';
-
-/**
- * Palettes
- */
 $GLOBALS['TCA']['pages']['palettes']['awesomeicons'] = [
     'label' => 'LLL:EXT:awesomeicons/Resources/Private/Language/Tca.xlf:tt_content.awesomeicons_awesomeicons.icon',
     'showitem' => '
@@ -49,9 +41,6 @@ $GLOBALS['TCA']['pages']['palettes']['awesomeicons'] = [
         tx_awesomeicons_search;Keyword search'
 ];
 
-/**
- * CType awesomeicons_awesomeicons
- */
 if ($awesomeiconsConiguration['awesomeiconsEnablePages'] == 1){
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'pages',
