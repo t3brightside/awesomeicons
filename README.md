@@ -20,13 +20,14 @@ Adds Icon tabs for content elements and pages.
 ## Installation
 
  - From TER: **awesomeicons**, or composer: **t3brightside/awesomeicons**
- - Include static template if Font Awesome is not loaded in your system yet
- - Check extensions configuration for disabling icon tabs or enabling only for certain content types
+ - Include static template if Font Awesome is not loaded in your system.
+ - Change template constant to include CSS from local source. CDN version is used by default.
+ - Check extension configuration for disabling icon tabs or enabling only for certain content types.
 
 ## Usage
 
 NOTE! No front end rendering included. This you have to do in your own templates.
-Use tx_awesomeicons_icon field from tt_content and pages tables in your front end templates.
+Use tx_awesomeicons_icon field from tt_content and pages tables in your templates.
 
 
 ## Sources
