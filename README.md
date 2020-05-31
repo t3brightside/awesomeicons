@@ -5,7 +5,7 @@
 
 **TYPO3 CMS extension for Font Awesome icons**
 
-Adds Icon tabs for content elements and pages.
+Adds Icon tab for content elements and pages.
 
 ## System requirements
 

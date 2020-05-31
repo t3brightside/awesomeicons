@@ -1,6 +1,6 @@
 {
   "name": "t3brightside/awesomeicons",
-  "description": "Adds Font Awesome icon tabs for pages and content elements.",
+  "description": "Adds Font Awesome icon tab for pages and content elements.",
   "type": "typo3-cms-extension",
   "version": "0.0.1",
   "keywords": ["TYPO3", "extension", "icon", "fontaweome"],

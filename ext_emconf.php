@@ -1,7 +1,7 @@
 <?php
 $EM_CONF[$_EXTKEY] = array (
   'title' => 'Awesome Icons',
-  'description' => 'Adds Font Awesome icon tabs for pages and content elements.',
+  'description' => 'Adds Font Awesome icon tab for pages and content elements.',
   'category' => 'plugin',
   'constraints' =>
   array (
