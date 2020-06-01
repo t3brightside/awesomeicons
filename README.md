@@ -28,6 +28,20 @@ Adds Icon tab for content elements and pages.
 - No front end rendering included. This you have to do in your own templates.
 - Use **tx_awesomeicons_icon** field from **tt_content** and **pages** tables in your templates.
 
+**Example**
+This could be your menu item:
+```html
+<f:for each="{menuMain}" as="menuItem">
+    <li class="{f:if(condition:menuItem.active, then:'act')}">
+        <f:link.page pageUid="{menuItem.data.uid}" class="{f:if(condition:menuItem.active, then:'act')}">
+            <f:if condition="{menuItem.data.tx_awesomeicons_icon}">
+                <i class="{menuItem.data.tx_awesomeicons_icon}"></i>
+            </f:if>
+            {menuItem.title}
+        </f:link.page>
+    </li>
+</f:for>
+```
 
 ## Sources
 -  [GitHub][a47ab545]
