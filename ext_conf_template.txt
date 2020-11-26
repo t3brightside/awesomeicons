@@ -4,3 +4,5 @@ awesomeiconsEnablePages = 1
 awesomeiconsEnableContent = 1
 # cat=basic/enable; type=string; label=Restrict to content types (header,textmedia,etc)
 awesomeiconsContentTypes =
+# cat=basic/enable; type=options[Disabled=0,Enabled=1]; label=Enable icons for categories
+awesomeiconsEnableCategory = 1

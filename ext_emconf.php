@@ -22,6 +22,6 @@ $EM_CONF[$_EXTKEY] = array (
   'author' => 'Tanel Põld',
   'author_email' => 'info@t3brightside.com',
   'author_company' => 'Brightside OÜ / t3brightside.com',
-  'version' => '0.0.1',
+  'version' => '0.0.2',
   'clearcacheonload' => false,
 );

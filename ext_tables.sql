@@ -5,3 +5,6 @@ CREATE TABLE tt_content (
 CREATE TABLE pages (
 	tx_awesomeicons_icon tinytext,
 );
+CREATE TABLE sys_category (
+	tx_awesomeicons_icon tinytext,
+);

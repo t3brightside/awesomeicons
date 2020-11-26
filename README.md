@@ -13,7 +13,7 @@ Adds Icon tab for content elements and pages.
 
 ## Features
 
-- Icon tab for pages and content elements
+- Icon tab for pages, content elements and system categories
 - Icon search by keyword
 - Show active icon
 - Manually write icon code
